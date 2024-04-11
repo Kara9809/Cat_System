@@ -3,10 +3,8 @@ package com.john.bryce.catsystem.repository;
 import com.john.bryce.catsystem.entities.Cat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 //@50%
@@ -31,8 +29,7 @@ public interface CatRepository extends JpaRepository<Cat, Integer> {
     List<Cat> findByNameStartingWith(String startWith);
 
 
-
-    // 10% native query
+//    10% native query
 //    @Query(value = "cat-system-ks.cats;", nativeQuery = true)
 //    List<Cat> getAllCats();
 

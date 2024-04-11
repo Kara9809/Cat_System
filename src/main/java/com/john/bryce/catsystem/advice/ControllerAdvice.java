@@ -21,7 +21,6 @@ public class ControllerAdvice {
 
     @ExceptionHandler(value = Exception.class)
     public ProblemDetail handleOtherException(Exception e) {
-
         return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST,"Something went wrong, please try again later");
     }
 }

@@ -24,6 +24,8 @@ public class Cat {
   private double weight;
   @JsonFormat(pattern = "d/M/yyyy")
   private LocalDate birthday;
+//  @Enumerated(EnumType.STRING)
+//  private Color color;
 
   // One cat can have many toys
   // One-to-many relationship

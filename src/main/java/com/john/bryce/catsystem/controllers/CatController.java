@@ -23,9 +23,9 @@ public class CatController {
 
 
 //    // RequestBody
-    // ReuqstBody => Object
-    // ReuqstParam => name, weight... id/uuid https//localhost:8080/api/cats/?name="mitizi"&weight="";
-//    PathVriable => id/uuid https//localhost:8080/api/cats/1
+    // RequestBody => Object
+    // RequestParam => name, weight... id/uuid https//localhost:8080/api/cats/?name="mitizi"&weight="";
+//    PathVariable => id/uuid https//localhost:8080/api/cats/1
 
 
     // 200  - 200 Get | Void 204
@@ -68,4 +68,4 @@ public class CatController {
         return catService.findByNameStartingWith(name);
     }
 
-    }
+}
